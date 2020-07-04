@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Welcome to Webby!</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-      <style>
+    <title>Welcome to Webby!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
         body {
             background: white;
             font-family: system-ui;
@@ -25,16 +26,22 @@
         }
     </style>
 </head>
+
 <body>
-
-<h1 id="name">Welcome to Webby,</p>
-<h2>Webby is the first browser that works in Shortcuts. iOS 14 supported.
-        
-<script>
-const queryString = new URLSearchParams(window.location.search);
-const name = queryString.get('name');
-document.getElementById('name').innerHTML = `Welcome to Webby, ${name}`
-
-</script>
+    <h1 id="name" style="text-align: center;">Welcome to Webby,</h1>
+    <h2 style="text-align: center;">Webby is the first browser that works in Shortcuts. iOS 14 supported.</h2>
+    <p><br></p>
+    <h3 id="ios" style="text-align: center;">Does it support my current i(Pad)OS version, ?</h3>
+    <p style="text-align: center;">Are you on a version newer than 12? Yes, it will.<script>
+            const queryString = new URLSearchParams(window.location.search);
+            const name = queryString.get('name');
+            document.getElementById('name').innerHTML = `Welcome to Webby, ${name}`
+            
+            const name = queryString.get('ios');
+            document.getElementById('ios').innerHTML = `Does it support my current i(Pad)OS version, ${ios}?`
+            
+        </script>
+    </p>
 </body>
+
 </html>
