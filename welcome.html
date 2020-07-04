@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to Webby!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+        body {
+            background: white;
+            font-family: system-ui;
+            color: black
+        }
+
+        /* Light Mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #333;
+                color: #fff
+            }
+
+            /* Dark Mode */
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="name">Welcome to Webby,</p>
+<h2>Webby is the first browser that works in Shortcuts. iOS 14 supported.
+        
+<script>
+const queryString = new URLSearchParams(window.location.search);
+const name = queryString.get('name');
+document.getElementById('name').innerHTML = `Welcome to Webby, ${name}`
+
+</script>
+</body>
+</html>
